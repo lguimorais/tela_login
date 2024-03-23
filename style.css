@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+.box{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+background: repeating-conic-gradient(form var(--a),#01dbc2 0%,#01dbc2 10%,transparent 10%,transparent 50%) ;
+    animation: animate 6s linear infinite;
+ border: solid 1px black;
+}
