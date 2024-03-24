@@ -77,3 +77,32 @@ form h2{
     z-index: 1;
 
 }
+.inputBx span::before{
+    content: '';
+    position: absolute;
+    inset: -2PX;
+    background: repeating-conic-gradient(form var(--a), #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    box-shadow: 0 0 0 2px #000;   
+}
+.inputBx:nth-child(2) span::before{
+    animation-delay: -1.5s;
+}
+.inputBx span::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #292929;
+}
+.inputBx input{
+    position: relative;
+    z-index: 100000;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 14px;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
