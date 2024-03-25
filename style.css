@@ -106,3 +106,35 @@ form h2{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+.inputBx input::placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+.inputBx input[type="submit"]{
+    background: #01dbc2;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px #01dbc2;
+    width: 100%;
+    font-weight: 500;
+    color: #292929;
+    filter: drop-shadow(0 0 15px #01dbc2);
+}
+.grup{
+    position: relative;
+    top: -10px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.grup a{
+    text-decoration: none;
+    color: #fff8;
+    letter-spacing: 0.1em;
+    font-size: 0.75em;
+}
+.grup a:nth-child(2),
+.grup a:hover{
+    color: #01dbc2;
+    filter: drop-shadow(0 0 5px #01bdc2);
+}
