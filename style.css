@@ -22,6 +22,7 @@ body{
     min-height: 400px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: repeating-conic-gradient(form var(--a),#01dbc2 0%,#01dbc2 10%,transparent 10%,transparent 50%) ;
     animation: animate 6s linear infinite;
     
@@ -30,10 +31,10 @@ body{
 
 @keyframes animate{
     0%{
-        --a: 0deg;
+        --a: 0deg
     }
     100%{
-        --a:360deg;
+        --a:360deg
     }
 }
 .box::before{
